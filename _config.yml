@@ -1,0 +1,28 @@
+# Site settings
+title: "Torah Talmud"
+description: "A static website for Torah and Talmud studies"
+url: "https://schulman-coaching.github.io"
+baseurl: "/torah-talmud"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .github/
+
+# Include files
+include:
+  - _pages
