@@ -1,0 +1,28 @@
+torah_books:
+  - name: Genesis
+    hebrew: בראשית
+    description: The book of beginnings, covering creation, the patriarchs, and the history of Israel up to Joseph.
+  - name: Exodus
+    hebrew: שמות
+    description: The story of Moses, the Israelites' exodus from Egypt, and the giving of the Torah at Sinai.
+  - name: Leviticus
+    hebrew: ויקרא
+    description: Laws and rituals, including sacrifices, purity, and holiness.
+  - name: Numbers
+    hebrew: במדבר
+    description: The census, journey through the desert, and laws for the Israelites.
+  - name: Deuteronomy
+    hebrew: דברים
+    description: Moses' final speeches, restating laws, and the death of Moses.
+
+talmud_tractates:
+  - name: Berakhot
+    description: Blessings and prayers.
+  - name: Shabbat
+    description: Laws of the Sabbath.
+  - name: Pesachim
+    description: Passover laws.
+  - name: Yoma
+    description: Yom Kippur rituals.
+  - name: Sukkah
+    description: Tabernacles festival.

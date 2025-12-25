@@ -38,11 +38,27 @@ To enable GitHub Pages:
 2. Under "Pages", select "Deploy from a branch".
 3. Choose the `gh-pages` branch and `/ (root)` folder.
 
-### Adding Content
+### Content Generation
 
-- Edit `index.md` for the home page.
-- Add new pages in the root or `_pages` directory.
-- Use Markdown for content.
+The website content is automatically generated from data files using a Python script with external integrations.
+
+- **Data Source**: `_data/books.yml` contains basic information about Torah books and Talmud tractates.
+- **Sefaria Integration**: Fetches sample texts from the Sefaria API (https://www.sefaria.org/api/).
+- **AI Integration**: Uses OpenAI API to generate intelligent summaries (requires `OPENAI_API_KEY` secret).
+- **Script**: `generate_content.py` creates Markdown pages with fetched data and AI-generated content.
+- **Automation**: GitHub Actions runs the script before building the site.
+
+#### Setting up AI Integration
+
+1. Get an OpenAI API key from https://platform.openai.com/
+2. Add it as a repository secret named `OPENAI_API_KEY` in GitHub Settings → Secrets and variables → Actions
+3. The workflow will use it to generate enhanced summaries
+
+#### Adding More Content
+
+1. Update `_data/books.yml` with new entries.
+2. Modify `generate_content.py` to handle additional data sources or API calls.
+3. The workflow automatically generates pages on each push.
 
 ### Customization
 
